@@ -1,0 +1,173 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/bootstrap-theme.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/bootstrap-theme.min.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/bootstrap.css" %}"/>
+
+
+
+    <link rel="stylesheet" href="{% static "css/flexslider.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/home.css" %}"/>
+
+</head>
+<body>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="{%  static "js/jquery.flexslider-min.js" %}"></script>
+<script src="{%  static "js/homepage.js" %}"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<div class="homepage">
+
+    {% include 'Navigation.html' %}
+
+    <div class="container-fluid">
+        <div class="row" style="margin-top: 100px;height: 500px">
+            <div class="col-md-8">
+                <div class="row">
+                    <img class="mechanic-image" src="{% static "images/car-mechanic.jpg" %}" />
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <div class="row" style="margin-top: 130px">
+                    <p class="checklist">
+                        <img class="tick-bullet"  src="{% static "images/tick.jpeg" %}" />
+                        Select pick up point
+                    </p>
+
+
+                    <p class="checklist">
+                        <img class="tick-bullet" src="{% static "images/tick.jpeg" %}" />
+                        Select your service centre
+                    </p>
+
+
+                    <p class="checklist">
+                        <img class="tick-bullet" src="{% static "images/tick.jpeg" %}" />
+                        Select drop point
+                    </p>
+
+
+                    <p class="checklist">
+                        <img class="tick-bullet" src="{% static "images/tick.jpeg" %}" />
+                        Smile to see your serviced vehicle in Parking
+                    </p>
+                </div>
+                <div class="row">
+                    <img class="click-away" src="/static/images/click.jpeg">
+                    <button type="button" class="btn btn-primary btn-lg schedule-button" >Schedule Vehicle Servicing</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row how-we-work">
+
+            <div class="row " align="center">
+{#                <h3 class="how-we-work-heading">#}
+{#                    How We Work#}
+{#                </h3>#}
+                <img style="margin-top:-30px"src="/static/images/wooden.jpg">
+
+            </div>
+            <div class="row" style="margin-top: 20px">
+                <div class="col-md-4">
+
+                    <h3 class="steps-heading"><b>PLACE ORDER</b></h3>
+                    <img class="steps-image" src="/static/images/online-booking.jpeg">
+
+
+                    <p class="steps-detail">
+                        You are too busy to take your vehicle to service centre.
+                        Don't Worry.
+                        Just Schedule a booking online with pick up and drop point.
+                        You can choose timing and service centre of your choice.
+
+                    </p>
+
+
+                </div>
+                <div class="col-md-4">
+
+                    <h3 class="steps-heading"><b>PICK UP</b></h3>
+                    <img class="steps-image" src="/static/images/pick-up-boy.jpeg">
+
+
+                    <p class="steps-detail">
+                        Our Serviceman will pick up your car and get it serviced at the service centre of your choice.
+                        Meanwhile you will be kept updated about status of servicing and any issue with your vehicle
+
+                    </p>
+
+
+                </div>
+                <div class="col-md-4">
+
+                    <h3 class="steps-heading"><b>HOME DELIVERY</b></h3>
+                    <img class="steps-image" src="/static/images/delivery.jpeg">
+
+
+                    <p class="steps-detail">
+                        Your car will be delivered by our serviceman to your desired Drop point.
+
+                    </p>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row Pricing" style="height: 500px">
+
+            <div class="row " align="center">
+                <h3 class="Pricing-heading" style="font-size: 50px;color: deepskyblue;font-family: cursive">
+                    Pricing
+                </h3>
+            </div>
+            <div class="row" style="margin-top: 50px" align="center">
+                <div class="col-md-6">
+                <img class="car-price" src="/static/images/car.jpeg">
+                    </div>
+                <div class="col-md-6">
+                <h3>
+                    Rs 100/per booking
+                </h3>
+              </div>
+                 </div>
+                <div class="row" style="margin-top: 50px" align="center">
+
+                <div class="col-md-6">
+                <img class="car-price" src="/static/images/bike.jpeg">
+                    </div>
+                <div class="col-md-6">
+                <h3>
+                    Rs 100/per booking
+                </h3>
+                    </div>
+                </div>
+
+        </div>
+
+
+
+    </div>
+
+</div>
+</body>
+</html>

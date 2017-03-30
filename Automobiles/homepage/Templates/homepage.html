@@ -1,0 +1,111 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+    <link rel="stylesheet" href="{% static "css/home.css" %}"/>
+    <link rel="stylesheet" href="{% static "css/flexslider.css" %}"/>
+
+</head>
+
+
+<body>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="{%  static "js/jquery.flexslider-min.js" %}"></script>
+<script src="{%  static "js/homepage.js" %}"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+
+
+<div class="container-fluid">
+    {% include 'Navigation.html' %}
+    <div class="row">
+    <div class="flexslider " style="margin-left: 225px;margin-right: 225px;max-height: 410px;">
+    <ul class="slides" style=" ">
+    <li>
+      <img class="image-slider" src="{% static "images/mechanic.jpg" %}" />
+    </li>
+    <li>
+      <img class="image-slider" src="{% static "images/bikes.jpeg" %}" />
+    </li>
+    <li>
+      <img class="image-slider" src="{% static "images/doorstep.jpeg" %}" />
+    </li>
+    <li>
+      <img class="image-slider" src="{% static "images/savetime.jpeg" %}" />
+    </li>
+  </ul>
+</div>
+    </div>
+    <div class="row" style="margin-top: -40px">
+        <div class="col-md-2 col-md-offset-3" >
+           <a href="#"><img  src="{% static "images/booking.png" %}" /></a>
+        </div>
+        <div class="col-md-2" >
+            <a href="#"><img src="{% static "images/accessories1.png" %}" /></a>
+
+            </div>
+        <div class="col-md-2" >
+            <a href="#"><img src="{% static "images/working.png" %}" /></a>
+
+            </div>
+        </div>
+
+    <div class="row" style="background-color: lightgray;height: 50px;margin-top: 50px">
+        <div class="col-md-12" >
+            <h2 style="color: #000000;text-align: center;font-family:cursive;font-size: 43px;margin-top: 40px">
+                DRIVING FORCE BEHIND US
+            </h2>
+            </div>
+        </div>
+    <div class="row" style="background-color: lightgray;height: 800px;">
+        <div class="col-md-2" >
+            <a>
+            <img  src="{% static "images/left_icon.png" %}" style="width: 70px;height: 70px;margin-left: 100px;margin-top: 150px"/>
+            </a>
+
+</div>
+        <div class="col-md-4">
+            <p style="color: #000000;margin-top: 100px;margin-left: -10px ;font-size: 23px;font-family: italic;text-align: justify;text-justify: inter-word;">
+            "Getting my car serviced is probably one of amongst
+            several tasks which is Required but sparing time for it is a Nightmare.
+            Great work @serveNdeliver guys. You guys have nailed this problem."
+            </p>
+
+             <img  src="{% static "images/Facebook_man.jpeg" %}" style="width: 70px;height: 70px;margin-left: 40px;margin-top: 20px"/><b style="margin-left: 20px;font-size: 20px">Shreyansh Singh</b><br>
+<img src="{% static "images/fb.png" %}" style="margin-left: 130px;margin-top: -60px"/>
+        </div>
+
+        <div class="col-md-4">
+            <p style="color: #000000;margin-top: 100px;margin-left: 10px ;font-size: 23px;font-family: italic;text-align: justify;text-justify: inter-word;">
+            "I won't say i was amazed by the idea But by the ease and comfort serveNdeliver provide. I got my bike serviced with dealer of my choice while i was sitting in my office."
+            </p>
+
+             <img  src="{% static "images/Twiiter_woman.jpeg" %}" style="width: 70px;height: 70px;margin-left: 40px;margin-top: 20px"/><b style="margin-left: 20px;font-size: 20px">Steffy Hitler</b><br>
+<img src="{% static "images/twitter_icon.png" %}" style="margin-left: 130px;margin-top: -60px;width: 25px;height: 25px"/>
+        </div>
+        <div class="col-md-2" >
+            <a>
+            <img  src="{% static "images/right_icon.png" %}" style="width: 70px;height: 70px;margin-top: 150px;margin-right: 50px"/>
+            </a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</body>
+</html>
